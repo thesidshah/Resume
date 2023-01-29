@@ -1,0 +1,66 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[a4paper,11pt]{article}
+\usepackage{yash_sid_style}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+%removed header
+\begin{center}
+    % \textbf
+    {\Huge \scshape Siddhant Shah} \\ \vspace{1pt}
+    \small \href{tel:8574379424}{\underline{+1(857)-437-9424}} $|$ \href{mailto:shah.sid@northeastern.edu}{\underline{shah.sid@northeastern.edu}} $|$ 
+    \small \href{https://linkedin.com/in/thesidshah}{\underline{\includegraphics[height = 0.3cm, width = 0.3cm]{LinkedIn_logo_initials.png}/thesidshah}} $|$
+    \small \href{https://github.com/thesidshah}{\underline{\includegraphics[height = 0.3cm, width = 0.3cm]{github.png}/thesidshah}}
+\end{center}
+
+%----------------------------OBJECTIVE-------------------------------
+% \section{Objective}
+% {
+% A highly motivated software engineer, looking for roles in Machine - Learning / Artificial - Intelligence domain. With my combination of expertise, I can provide an integrated and clean code that enhances the mathematics's application to your problem.
+% }
+
+%-----------EDUCATION-----------
+\section{Education}
+\input{components/education}
+  
+% Technical experience
+\section{Technical Skills}
+\input{components/technical_skills}
+
+%-----------EXPERIENCE-----------
+\input{components/work_experiences}
+
+   
+
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+  
+  %-----------PROJECTS-----------
+\section{Recent Projects}
+\subsection*{Related to Software Development}
+ \input{components/SoftwareEngineering.tex}
+ \subsection*{Related to Data Science}
+ \input{components/DataScienceProjects.tex}
+ 
+
+% %-----------PUBLICATIONS-----------
+\input{components/publications}
+%-------------------------------------------
+
+\end{document}
